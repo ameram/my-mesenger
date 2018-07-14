@@ -29,6 +29,7 @@
             android:layout_marginTop="20dp"
             android:onClick="onSendMessage"
             android:text="@string/send" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

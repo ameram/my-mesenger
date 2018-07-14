@@ -23,9 +23,12 @@ public class CreateMessageActivity extends Activity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, messageTextString);
-        startActivity(intent);
-//Intent intent = new Intent(this, ReceiveMessageActivity.class);
+        //Intent intent = new Intent(this, ReceiveMessageActivity.class);
         //intent.putExtra(ReceiveMessageActivity.EXTRA_MESSAGE, messageTextString);
+        String chooserTitle = getString(R.string.chooser);
+        Intent chosenIntent = Intent.createChooser(intent, chooserTitle);
+        startActivity(chosenIntent);
 
     }
+
 }

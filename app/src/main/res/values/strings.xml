@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">My Massenger</string>
     <string name="send">Send Message</string>
+    <string name="chooser">Send message via...</string>
     <string name="hint">Enter a message</string>
     <string name="done">You made it till this point</string>
 </resources>
